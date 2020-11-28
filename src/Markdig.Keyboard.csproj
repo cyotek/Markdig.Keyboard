@@ -10,7 +10,7 @@
     <Authors>Cyotek</Authors>
     <Owners>Cyotek</Owners>
     <VersionPrefix>1.0</VersionPrefix>
-    <VersionSuffix>alpha2</VersionSuffix>
+    <VersionSuffix>alpha3</VersionSuffix>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/cyotek/Markdig.Keyboard</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>

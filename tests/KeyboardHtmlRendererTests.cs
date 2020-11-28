@@ -41,6 +41,28 @@ namespace Markdig.Extensions.Keyboard.Tests
       }
     }
 
+    public static IEnumerable<TestCaseData> NonHtmlKeyboardTestCaseSource
+    {
+      get
+      {
+        yield return new TestCaseData("Press <<?>> to continue", new KeyboardOptions(), "Press ? to continue").SetName(nameof(NonHtmlKeyboardTestCases) + "Default");
+        yield return new TestCaseData("<<>>", new KeyboardOptions(), "<<>>").SetName(nameof(NonHtmlKeyboardTestCases) + "Empty");
+        yield return new TestCaseData("<<?>>", new KeyboardOptions
+        {
+          ClassName = "keyboard"
+        }, "?").SetName(nameof(NonHtmlKeyboardTestCases) + "WithClass");
+        yield return new TestCaseData("<<?>>", new KeyboardOptions
+        {
+          TagName = "code"
+        }, "?").SetName(nameof(NonHtmlKeyboardTestCases) + "WithTag");
+        yield return new TestCaseData("<<?>>", new KeyboardOptions
+        {
+          ClassName = "keyboard",
+          TagName = "code"
+        }, "?").SetName(nameof(NonHtmlKeyboardTestCases) + "WithClassAndTag");
+      }
+    }
+
     #endregion Public Properties
 
     #region Public Methods
@@ -84,6 +106,26 @@ namespace Markdig.Extensions.Keyboard.Tests
 
       // act
       actual = Markdown.ToHtml(input, target);
+
+      // assert
+      Assert.AreEqual(expected, actual);
+    }
+
+    [Test]
+    [TestCaseSource(nameof(NonHtmlKeyboardTestCaseSource))]
+    public void NonHtmlKeyboardTestCases(string input, KeyboardOptions options, string expected)
+    {
+      // arrange
+      MarkdownPipeline target;
+      string actual;
+
+      target = new MarkdownPipelineBuilder()
+        .UseKeyboard(options).Build();
+
+      expected += "\n";
+
+      // act
+      actual = Markdown.ToPlainText(input, target);
 
       // assert
       Assert.AreEqual(expected, actual);

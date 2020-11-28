@@ -35,21 +35,28 @@ namespace Markdig.Extensions.Keyboard
 
     protected override void Write(HtmlRenderer renderer, KeyboardInline obj)
     {
-      renderer.Write('<')
-        .Write(_options.TagName);
-      if (!string.IsNullOrEmpty(_options.ClassName))
+      if (renderer.EnableHtmlForInline)
       {
-        renderer.Write(' ')
-          .Write("class=\"")
-          .Write(_options.ClassName)
-          .Write('"');
+        renderer.Write('<')
+          .Write(_options.TagName);
+        if (!string.IsNullOrEmpty(_options.ClassName))
+        {
+          renderer.Write(' ')
+            .Write("class=\"")
+            .Write(_options.ClassName)
+            .Write('"');
+        }
+        renderer.Write('>')
+          .Write(obj.Text)
+          .Write('<')
+          .Write('/')
+          .Write(_options.TagName)
+          .Write('>');
       }
-      renderer.Write('>')
-        .Write(obj.Text)
-        .Write('<')
-        .Write('/')
-        .Write(_options.TagName)
-        .Write('>');
+      else
+      {
+        renderer.Write(obj.Text);
+      }
     }
 
     #endregion Protected Methods
