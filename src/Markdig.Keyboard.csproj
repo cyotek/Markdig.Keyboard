@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net5.0;netcoreapp3.1;netcoreapp2.1;netstandard2.1;netstandard2.0;net48</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Cyotek.Markdig.Keyboard</PackageId>
+    <Title>Markdig.Keyboard</Title>
+    <Authors>Cyotek</Authors>
+    <Owners>Cyotek</Owners>
+    <VersionPrefix>1.0</VersionPrefix>
+    <VersionSuffix>alpha</VersionSuffix>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/cyotek/Cyotek.Markdig.Keyboard</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/cyotek/Cyotek.Markdig.Keyboard</RepositoryUrl>
+    <Description>Markdig extension for inserting kbd tags</Description>
+    <PackageTags>markdig;cyotek</PackageTags>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyTitle>Markdig Keyboard Extension</AssemblyTitle>
+    <Company>Cyotek Ltd</Company>
+    <Product>Markdig Keyboard Extension</Product>
+    <Copyright>Copyright © 2020 Cyotek Ltd. All Rights Reserved.</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\res\icon.png" Link="icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="markdig" Version="0.22.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="*.ncrunchproject" />
+  </ItemGroup>
+
+</Project>

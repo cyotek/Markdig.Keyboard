@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Markdig.Keyboard", "src\Markdig.Keyboard.csproj", "{7B4EC0E8-0763-417F-8EC3-CAED02F327C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Markdig.Keyboard.Tests", "tests\Markdig.Keyboard.Tests.csproj", "{8A43A8B1-442D-4760-B387-238F99E6D968}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Markdig.Keyboard.Demo", "demo\Markdig.Keyboard.Demo.csproj", "{58F4E7F1-3D4B-4642-9103-52F172D3C01C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B4EC0E8-0763-417F-8EC3-CAED02F327C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B4EC0E8-0763-417F-8EC3-CAED02F327C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B4EC0E8-0763-417F-8EC3-CAED02F327C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B4EC0E8-0763-417F-8EC3-CAED02F327C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A43A8B1-442D-4760-B387-238F99E6D968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A43A8B1-442D-4760-B387-238F99E6D968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A43A8B1-442D-4760-B387-238F99E6D968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A43A8B1-442D-4760-B387-238F99E6D968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58F4E7F1-3D4B-4642-9103-52F172D3C01C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F4E7F1-3D4B-4642-9103-52F172D3C01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F4E7F1-3D4B-4642-9103-52F172D3C01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F4E7F1-3D4B-4642-9103-52F172D3C01C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A616CA8-3B2A-45AD-BE69-F0EA46A1BB24}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net5.0;netcoreapp3.1;netcoreapp2.1;netstandard2.1;netstandard2.0;net48</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="markdig" Version="0.22.0" />
+    <PackageReference Include="nunit" Version="3.12.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\Markdig.Keyboard.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="*.ncrunchproject" />
+  </ItemGroup>
+
+</Project>
