@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net5.0;netcoreapp3.1;netcoreapp2.1;netstandard2.1;netstandard2.0;net48</TargetFrameworks>
+    <TargetFrameworks>net5.0;netcoreapp3.1;netcoreapp2.1;netstandard2.1;netstandard2.0;net48;net472;net462;net46</TargetFrameworks>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -10,7 +10,7 @@
     <Authors>Cyotek</Authors>
     <Owners>Cyotek</Owners>
     <VersionPrefix>1.0</VersionPrefix>
-    <VersionSuffix>alpha3</VersionSuffix>
+    <VersionSuffix>alpha4</VersionSuffix>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/cyotek/Markdig.Keyboard</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
@@ -35,7 +35,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
-    <PackageReference Include="markdig" Version="0.22.0" />
+    <PackageReference Include="markdig" Version="0.18.3" />
   </ItemGroup>
 
   <ItemGroup>

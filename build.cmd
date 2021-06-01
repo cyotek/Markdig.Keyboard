@@ -23,6 +23,9 @@ REM CALL signcmd net462\%DLLNAME%
 REM CALL signcmd net472\%DLLNAME%
 
 CALL signcmd net48\%DLLNAME%
+CALL signcmd net472\%DLLNAME%
+CALL signcmd net462\%DLLNAME%
+CALL signcmd net46\%DLLNAME%
 CALL signcmd netstandard2.0\%DLLNAME%
 CALL signcmd netstandard2.1\%DLLNAME%
 CALL signcmd netcoreapp2.1\%DLLNAME%

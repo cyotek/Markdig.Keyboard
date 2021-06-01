@@ -136,6 +136,9 @@ Pre-built binaries are available via a signed [NuGet package][nuget]
 containing the following targets.
 
 * .NET 4.8
+* .NET 4.7.2
+* .NET 4.6.2
+* .NET 4.6
 * .NET Standard 2.0
 * .NET Standard 2.1
 * .NET Core 2.1
